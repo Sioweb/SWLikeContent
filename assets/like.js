@@ -1,6 +1,7 @@
-var removeMsg = false;
+
 function increase_this (element){
-	var Element = $(element);
+	var Element = $(element),
+		removeMsg = false;
 
 	if(removeMsg)
 		clearTimeout(removeMsg);
