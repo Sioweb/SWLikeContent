@@ -24,6 +24,12 @@ function increase_this (element){
 			if(result.code == '10')
 				span.addClass('like_successfull');
 			
+			if(typeof result.count != 'undefined')
+			{
+				Element.children('.count_likes').remove();
+				Element.append('<span class="count_likes">('+result.count+')</span>');
+			}
+
 			removeMsg = setTimeout(function(){span.remove();},2000);
 		}
 	});
