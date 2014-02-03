@@ -23,9 +23,9 @@ class LikeHandler extends \Frontend
 	public function increaseLike()
 	{
 		$ButtonID = \Input::post('id');
-		$Like = \Input::post('like');
-		if(!$Like)
-			$Like = 1;
+		$LikeCount = \Input::post('like');
+		if(!$LikeCount)
+			$LikeCount = 1;
 		$UserIP = md5(date('Y').\Environment::get('ip'));
 		$getIP = \SWLikecontentModel::findIpAndId($UserIP,$ButtonID);
 
@@ -37,7 +37,7 @@ class LikeHandler extends \Frontend
 		if($ButtonID && $UserIP)
 			$like = new SWLikecontentModel();
 			$like->ip = $UserIP;
-			$like->like = $Like;
+			$like->likeCount = $LikeCount;
 			$like->button_id = $ButtonID;
 			$like->session_id = session_id();
 			$like->save();

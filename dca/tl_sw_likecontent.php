@@ -122,9 +122,9 @@ $GLOBALS['TL_DCA']['tl_sw_likecontent'] = array
 			'eval'                    => array('mandatory'=>true, 'maxlength'=>255, 'tl_class'=>'w50'),
 			'sql'                     => "varchar(255) NOT NULL default ''"
 		),
-		'like' => array
+		'likeCount' => array
 		(
-			'label'                   => &$GLOBALS['TL_LANG']['tl_sw_likecontent']['like'],
+			'label'                   => &$GLOBALS['TL_LANG']['tl_sw_likecontent']['likeCount'],
 			'exclude'                 => true,
 			'inputType'               => 'text',
 			'eval'                    => array('mandatory'=>true, 'maxlength'=>255, 'tl_class'=>'w50'),

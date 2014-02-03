@@ -12,6 +12,7 @@ function increase_this (element){
 		data: { isAjaxRequest: 1, increase_like: 1, id: Element.data('id'), REQUEST_TOKEN: Contao.request_token},
 		success: function(result)
 		{
+			console.log(result);
 			var span = false;
 			result = $.parseJSON(result).content;
 			Element.children('.msg').remove();
