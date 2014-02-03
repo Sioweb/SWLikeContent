@@ -1,0 +1,36 @@
+.ce_sw_likecontent.block {
+	overflow: visible;
+}
+
+.ce_sw_likecontent a {
+	float: left;
+	background: white;
+	padding: .2em .5em;
+	border: 1px solid #c2c2c2;
+	border-radius: 5px;
+	color: #333;
+	position: relative;
+}
+
+.ce_sw_likecontent  .same_session {
+	background: #c2eec2;
+}
+
+.ce_sw_likecontent a:active {
+	background: #eee;
+}
+
+.ce_sw_likecontent .msg {
+	left: 0;
+	bottom: 100%;
+	bottom: calc(100% + 5px);
+	position: absolute;
+	border: 1px solid #ddaaaa;
+	border-radius: 5px;
+	background: white;
+	white-space: nowrap;
+	padding: .2em .5em;
+}
+.ce_sw_likecontent .like_error {
+	border-color: #ddaaaa;
+}

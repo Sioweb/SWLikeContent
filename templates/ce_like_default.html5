@@ -1,0 +1,3 @@
+<div class="<?php echo $this->class;?> block"<?php echo $this->cssID;?>>
+	<a <?php if($this->same_session):?>class="same_session" <?php endif;?>onclick="return increase_this(this);" data-id="<?php echo $this->id;?>" title="" href="<?php echo $this->href;?>">Like<?php if($this->countLikes >= 1):?><span>(<?php echo $this->countLikes;?>)</span><?php endif;?></a>
+</div>
