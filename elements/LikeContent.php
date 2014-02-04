@@ -46,5 +46,6 @@ class LikeContent extends \ContentElement
 			if($Likes->session_id == session_id())
 				$this->Template->same_session = 1;
 		$this->Template->countLikes = $Likes->count();
+		$this->Template->likeText = $GLOBALS['like_content']['like_text'];
 	}
 }

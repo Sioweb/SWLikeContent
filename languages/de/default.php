@@ -17,5 +17,6 @@
 
 $GLOBALS['like_content'] = array(
 	0 => 'Sie haben bereits abgestimmt!',
-	10 => 'Erfolgreich bewertet.'
+	10 => 'Erfolgreich bewertet.',
+	'like_text' => 'Like It!'
 );
